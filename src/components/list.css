@@ -1,0 +1,120 @@
+/* Set up */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.primary, .container {
+  color: #444f56;
+  text-align: center;
+  background-color: rgb(207, 210, 207);
+}
+
+.primary {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+/* To do style tags*/
+button {
+  cursor: pointer;
+  border-radius: 20%;
+  background-color: rgb(162, 181, 187);
+  padding: 5px;
+  height: 30px;
+  color:rgb(34, 38, 39);
+  font-weight: bold;
+  border: none;
+}
+
+li {
+  background-color:rgb(245, 237, 220);
+  border: 1px solid rgb(244, 222, 222);
+  width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 255, .2);
+}
+
+p{
+  cursor: pointer;
+  white-space: initial;
+  word-break: break-word;
+}
+
+h3{
+  font-size: x-large;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+input{
+  margin-bottom: 25px;
+  height: 30px;
+  width: 300px;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 255, .2);
+}
+
+
+/* clases styles */
+
+.submit-btn{
+  background-color: #BAD7E9;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #444f56;
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 255, .2);
+}
+
+
+.isEditing {
+  background-color: rgba(247, 172, 172, 0.809);
+}
+
+.entry {
+  background-color: brown;
+  visibility: hidden;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+.delete{
+  background-color: rgb(235, 29, 54);
+}
+
+.clear-btn{
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 255, .2);
+  margin-bottom: 10px;
+}
+
+.list {
+  display:flex;
+  justify-content:space-between;
+}
+
+
+@media screen and (max-width:450px) {
+  li{
+    width: 200px;
+  }
+  input{
+    width: 150px;
+  }
+  .submit-btn{
+    margin-bottom: 15px;
+  }
+}
